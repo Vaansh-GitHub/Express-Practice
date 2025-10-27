@@ -1,0 +1,24 @@
+~~ Restfull API
+
+1. Server and Client Architechture :
+
+Server is different and client is different . Server and Client should be independent
+of each other .
+
+2.Always respect all http methods :
+
+Good practices~
+
+GET /user -  read users data and return data
+POST /user - handle new user creation
+Patch /user - update the user
+
+Bad practices~ why should we mention update,create etc. such words when we are using POST or GET methods we should respect this methods
+
+POST /updateUser - user update
+POST /createUser - create user
+GET /getUser - get user details
+
+
+Server Side Rendering (SSR) -> is Fast as we directly render the data what is being sent by the server (Like rendering a HTML file)
+Client Side Rendering(CSR)-> is Slow as first we fetch the data then frontend will render the data (Like rendering json files)
